@@ -1,2 +1,69 @@
 @import './Style/reset.css';
+@import './Style/font.css';
 @import './Style/grid.css';
+
+/* style */
+
+body {
+    font-family: 'inter';
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(.6rem);
+}
+
+.header-content {
+    color: rgb(108, 115, 127);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-search {}
+
+.header__search-icon {}
+
+.header-setting {
+    display: flex;
+    align-items: center;
+}
+
+.icon-parent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -.3rem;
+    right: -.2rem;
+    font-size: 1.2rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: red;
+}
+
+.header__search-icon,
+.notification-icon,
+.people-icon {
+    cursor: pointer;
+    font-size: 2.7rem !important;
+}
+
+.people-icon {
+    margin: 0 3rem;
+}
+
+.header__avatar {}
