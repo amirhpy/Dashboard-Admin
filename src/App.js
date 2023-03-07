@@ -6,14 +6,14 @@ import routes from './routes'
 
 // Components
 import Header from './Components/Header/Header'
-import PanelAdmin from './Components/PanelAdmin/PanelAdmin'
+import HamburgerMenu from './Components/Shared/HamburgerMenu/HamburgerMenu'
 
 function App() {
     let router = useRoutes(routes)
 
     return (
         <div className='app-container'>
-            <PanelAdmin />
+            <HamburgerMenu />
             <div className='app-right'>
                 <Header />
                 {router}
