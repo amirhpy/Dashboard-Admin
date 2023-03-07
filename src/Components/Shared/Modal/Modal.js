@@ -19,15 +19,6 @@ const style = {
     p: '3.2rem',
 };
 
-const inputstyle = {
-    padding: '1.5rem 1rem',
-    border: 'none',
-    outline: 'none',
-    borderRadius: '.8rem',
-    border: 'solid .1rem rgb(229, 231, 235)',
-    width: '100%'
-}
-
 export default function TransitionsModal() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -51,31 +42,16 @@ export default function TransitionsModal() {
             >
                 <Fade in={open}>
                     <Box sx={style} className='modal-container'>
-                        <Typography style={{
-                            color: '#111927',
-                            fontSize: '1.7rem',
-                            fontFamily: 'jakart',
-                            fontWeight: '700'
-                        }} id="transition-modal-title" variant="h6" component="h2">
+                        <Typography className='modal__name' id="transition-modal-title" variant="h6" component="h2">
                             Search
                         </Typography>
-                        <div style={{
-                            backgroundColor: 'rgb(243, 244, 246)',
-                            padding: '1rem',
-                            marginTop: '2rem'
-                        }}>
-                            <Typography style={{
-                                color: 'rgb(108, 115, 127)',
-                                fontSize: '1.2rem',
-                                fontFamily: 'inter',
-                                fontWeight: '500',
-                                margin: '0'
-                            }} id="transition-modal-description" sx={{ mt: 2 }}>
+                        <div className='modal-alert-parent'>
+                            <Typography className='modal__alert' id="transition-modal-description" sx={{ mt: 2 }}>
                                 Tip.Search by entering a keyword and pressing Enter
                             </Typography>
                         </div>
-                        <div style={{marginTop: '2.5rem'}}>
-                            <input style={inputstyle} placeholder='Search' />
+                        <div className='modal-input-parent'>
+                            <input className='modal__input' placeholder='Search' />
                         </div>
                     </Box>
                 </Fade>

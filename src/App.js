@@ -6,15 +6,19 @@ import routes from './routes'
 
 // Components
 import Header from './Components/Header/Header'
+import PanelAdmin from './Components/PanelAdmin/PanelAdmin'
 
 function App() {
     let router = useRoutes(routes)
 
     return (
-        <>
-            <Header />
-            {router}
-        </>
+        <div className='app-container'>
+            <PanelAdmin />
+            <div className='app-right'>
+                <Header />
+                {router}
+            </div>
+        </div>
     )
 }
 
