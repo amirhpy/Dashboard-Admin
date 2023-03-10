@@ -230,6 +230,10 @@ a {
     background-color: #1C2536;
 }
 
+.dashboard-admin {
+    padding: 2rem;
+}
+
 .panel-devias {
     display: flex;
     align-items: center;
@@ -354,24 +358,52 @@ a {
 
 @media screen and (max-width: 1200px) {
     .app-right {
-        width: 95%;
+        width: 93%;
     }
+
     .panel-admin {
         position: absolute;
         z-index: 9;
         top: 0;
         left: 0;
-        width: 24.5%;
+        width: 7%;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 0rem;
+        height: 100vh;
         overflow: hidden;
         transition: all 120ms ease-in;
     }
 
+    .dashboard-admin {
+        padding: 1rem;
+    }
+
+    .panel-devias {
+        justify-content: center;
+    }
+
     .menu--open {
-        height: 100rem;
+        width: 24.5%;
+    }
+
+    .panel__item {
+        justify-content: center;
+    }
+
+    .panel__item-txt,
+    .panel-devias-info {
+        display: none;
+    }
+
+    .menu--open .panel__item,
+    .menu--open .panel-devias {
+        justify-content: flex-start;
+    }
+
+    .menu--open .panel__item-txt,
+    .menu--open .panel-devias-info {
+        display: block;
     }
 
     .nav__toggle-icon {
@@ -379,10 +411,42 @@ a {
     }
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .app-right {
+        width: 91%;
+    }
 
-@media screen and (max-width: 768px) {}
+    .panel-admin {
+        width: 9%;
+    }
+}
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 768px) {
+    .app-right {
+        width: 88%;
+    }
 
-@media screen and (max-width: 380px) {}
+    .panel-admin {
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app-right {
+        width: 83%;
+    }
+
+    .panel-admin {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .app-right {
+        width: 80%;
+    }
+
+    .panel-admin {
+        width: 20%;
+    }
+}

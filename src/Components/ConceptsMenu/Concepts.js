@@ -3,7 +3,7 @@ import React from 'react';
 const Concepts = () => {
     return (
         <div className='concepts-container'>
-            <h4 className='concepts__menu-name'>concepts</h4>
+            {/* <h4 className='concepts__menu-name'>concepts</h4> */}
             <ul className='concepts-menu panel-menu'>
                 <li className='concepts__item mt-0 panel__item'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
