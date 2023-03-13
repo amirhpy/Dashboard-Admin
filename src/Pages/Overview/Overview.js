@@ -29,9 +29,7 @@ const Overview = () => {
             <div className='container'>
                 <h3 className='components-name'>Overview</h3>
                 <div className='row'>
-                    {
-                        allTasks.map(item => <Tasks key={item.id} {...item} />)
-                    }
+                    {allTasks.map(item => <Tasks key={item.id} {...item} />)}
                 </div>
                 <div className='overview-charts'>
                     <div className='row'>

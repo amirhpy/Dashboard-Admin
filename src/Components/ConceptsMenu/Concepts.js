@@ -3,50 +3,50 @@ import React from 'react';
 const Concepts = () => {
     return (
         <div className='concepts-container'>
-            <ul className='concepts-menu panel-menu'>
-                <li className='concepts__item panel__item'>
+            <ul className='panel-menu'>
+                <li className='panel__item'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                         <path fill="currentColor" d="M12 22c5.5228 0 10-4.4772 10-10 0-5.5229-4.4772-10-10-10C6.4771 2 2 6.4771 2 12c0 5.5228 4.4771 10 10 10Z" opacity="0.12">
                         </path>
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.5 7.5h4.25C14.9926 7.5 16 8.5074 16 9.75S14.9926 12 13.75 12H9.5h4.75c1.2426 0 2.25 1.0074 2.25 2.25s-1.0074 2.25-2.25 2.25H9.5m0-9H8m1.5 0v9m0 0H8M10 6v1.5m0 9V18m3-12v1.5m0 9V18m9-6c0 5.5228-4.4772 10-10 10-5.5229 0-10-4.4772-10-10C2 6.4771 6.4771 2 12 2c5.5228 0 10 4.4771 10 10Z">
                         </path>
                     </svg>
-                    <p className='concepts__item-txt panel__item-txt'>Crypto</p>
+                    <p className='panel__item-txt'>Crypto</p>
                 </li>
 
-                <li className='concepts__item panel__item'>
+                <li className='panel__item'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                         <path fill="currentColor" d="M3 10.5651c0-.5744 0-.8616.074-1.126a1.9998 1.9998 0 0 1 .318-.6502c.1633-.2208.39-.3971.8434-.7498l6.7823-5.2751c.3513-.2732.527-.4099.721-.4624a.9996.9996 0 0 1 .5226 0c.194.0525.3697.1891.721.4624l6.7823 5.2751c.4534.3527.6801.529.8434.7498.1446.1955.2524.4159.318.6502.074.2644.074.5516.074 1.126V17.8c0 1.1201 0 1.6801-.218 2.108a1.9996 1.9996 0 0 1-.874.874C19.4802 21 18.9201 21 17.8 21H6.2c-1.1201 0-1.6802 0-2.108-.218a1.9997 1.9997 0 0 1-.874-.874C3 19.4801 3 18.9201 3 17.8v-7.2349Z" opacity="0.12">
                         </path>
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.126 14c.444 1.7252 2.0102 3 3.874 3s3.4299-1.2748 3.874-3M11.0177 2.764 4.2354 8.0391c-.4534.3527-.68.529-.8434.7498a1.9998 1.9998 0 0 0-.318.6502C3 9.7035 3 9.9907 3 10.565V17.8c0 1.1201 0 1.6801.218 2.108.1917.3763.4977.6823.874.874C4.5198 21 5.08 21 6.2 21h11.6c1.1201 0 1.6802 0 2.108-.218a1.9996 1.9996 0 0 0 .874-.874C21 19.4801 21 18.9201 21 17.8v-7.2349c0-.5744 0-.8616-.074-1.126a2.0016 2.0016 0 0 0-.318-.6502c-.1633-.2208-.39-.3971-.8434-.7498L12.9823 2.764c-.3513-.2732-.527-.4099-.721-.4624a.9996.9996 0 0 0-.5226 0c-.194.0525-.3697.1891-.721.4624Z">
                         </path>
                     </svg>
-                    <p className='concepts__item-txt panel__item-txt'>Account</p>
+                    <p className='panel__item-txt'>Account</p>
                 </li>
 
-                <li className='concepts__item panel__item'>
+                <li className='panel__item'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" d="M17.3519 16.5h-8.558c-.9901 0-1.4852 0-1.8827-.1826a2.0005 2.0005 0 0 1-.8532-.7451c-.2346-.3692-.3013-.8598-.4348-1.8409L4.5712 6h16.4619c.3317 0 .4976 0 .6143.068a.5.5 0 0 1 .2197.2655c.045.1274.0139.2903-.0481.6162l-1.3237 6.9491c-.1763.9259-.2645 1.3888-.5032 1.7354a1.9996 1.9996 0 0 1-.8413.6962c-.3851.1696-.8564.1696-1.7989.1696Z" opacity="0.12"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 2h1.3062c.246 0 .369 0 .468.0452a.5.5 0 0 1 .213.1848c.0587.0915.0761.2133.111.4569L4.5713 6m0 0 1.052 7.7314c.1334.9811.2001 1.4717.4347 1.8409.2067.3254.503.5841.8533.7451.3975.1826.8925.1826 1.8827.1826h8.5579c.9425 0 1.4138 0 1.799-.1696a2.0009 2.0009 0 0 0 .8413-.6962c.2386-.3466.3268-.8095.5032-1.7354l1.3236-6.9491c.0621-.3259.0931-.4888.0481-.6162a.4996.4996 0 0 0-.2197-.2655C21.5308 6 21.365 6 21.0332 6H4.5714ZM10 21c0 .5523-.4477 1-1 1s-1-.4477-1-1 .4477-1 1-1 1 .4477 1 1Zm8 0c0 .5523-.4477 1-1 1s-1-.4477-1-1 .4477-1 1-1 1 .4477 1 1Z"></path></svg>
-                    <p className='concepts__item-txt panel__item-txt'>Orders</p>
+                    <p className='panel__item-txt'>Orders</p>
                 </li>
 
-                <li className='concepts__item panel__item'>
+                <li className='panel__item'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" d="M4 7.8c0-1.6802 0-2.5202.327-3.162a3 3 0 0 1 1.311-1.311C6.2798 3 7.1198 3 8.8 3h6.4c1.6802 0 2.5202 0 3.162.327a2.9997 2.9997 0 0 1 1.311 1.311C20 5.2798 20 6.1198 20 7.8V21l-2.75-2-2.5 2L12 19l-2.75 2-2.5-2L4 21V7.8Z" opacity="0.12"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 10.5 2 2L15.5 8M20 21V7.8c0-1.6802 0-2.5202-.327-3.162a2.9997 2.9997 0 0 0-1.311-1.311C17.7202 3 16.8802 3 15.2 3H8.8c-1.6802 0-2.5202 0-3.162.327a3 3 0 0 0-1.311 1.311C4 5.2798 4 6.1198 4 7.8V21l2.75-2 2.5 2L12 19l2.75 2 2.5-2L20 21Z"></path></svg>
-                    <p className='concepts__item-txt panel__item-txt'>Invoices</p>
+                    <p className='panel__item-txt'>Invoices</p>
                 </li>
 
-                <li className='concepts__item panel__item'>
+                <li className='panel__item'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" d="M5.2 4h5.6c1.1201 0 1.6802 0 2.108.218.3763.1917.6823.4977.874.874C14 5.5198 14 6.08 14 7.2V17h-4c0-1.6569-1.3431-3-3-3-1.6505 0-2.9896 1.3328-3 2.9808-.3922-.0239-.6705-.0778-.908-.1988a1.9997 1.9997 0 0 1-.874-.874C2 15.4802 2 14.9201 2 13.8V7.2c0-1.1201 0-1.6802.218-2.108a1.9999 1.9999 0 0 1 .874-.874C3.5198 4 4.08 4 5.2 4Z" opacity="0.12"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 7h2.3373c.2445 0 .3668 0 .4819.0276a1 1 0 0 1 .2891.1198c.1009.0618.1874.1483.3603.3212l4.0628 4.0628c.1729.1729.2594.2594.3212.3603a.9981.9981 0 0 1 .1198.2891c.0276.1151.0276.2374.0276.4819V15.5c0 .4659 0 .6989-.0761.8827a1.0002 1.0002 0 0 1-.5412.5412C21.1989 17 20.9659 17 20.5 17m-5 0H14m0 0V7.2c0-1.1201 0-1.6802-.218-2.108a1.9997 1.9997 0 0 0-.874-.874C12.4802 4 11.9201 4 10.8 4H5.2c-1.1201 0-1.6802 0-2.108.218a1.9999 1.9999 0 0 0-.874.874C2 5.5198 2 6.08 2 7.2V15c0 1.1046.8954 2 2 2m10 0h-4m0 0c0 1.6569-1.3431 3-3 3s-3-1.3431-3-3m6 0c0-1.6569-1.3431-3-3-3s-3 1.3431-3 3m16.5.5c0 1.3807-1.1193 2.5-2.5 2.5s-2.5-1.1193-2.5-2.5S16.6193 15 18 15s2.5 1.1193 2.5 2.5Z"></path></svg>
-                    <p className='concepts__item-txt panel__item-txt'>Logistics</p>
+                    <p className='panel__item-txt'>Logistics</p>
                 </li>
 
-                <li className='concepts__item panel__item'>
+                <li className='panel__item'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" d="M12.3578 3.679c-.1312-.0656-.1968-.0984-.2656-.1113a.4997.4997 0 0 0-.1844 0c-.0688.0129-.1344.0457-.2656.1113L2 8.5l9.6422 4.8212c.1312.0656.1968.0984.2656.1113a.5014.5014 0 0 0 .1844 0c.0688-.0129.1344-.0457.2656-.1113L22 8.5001 12.3578 3.679Z" opacity="0.12"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10.0001v6.0111c0 .359 0 .5384.0546.6969a.9995.9995 0 0 0 .231.3736c.1173.1198.2778.2001.5989.3606l5.4 2.7c.2623.1312.3935.1968.5311.2226.1219.0228.2469.0228.3688 0 .1376-.0258.2688-.0914.5311-.2226l5.4-2.7c.3211-.1605.4816-.2408.5989-.3606a.999.999 0 0 0 .2309-.3736C19 16.5496 19 16.3702 19 16.0112v-6.0111m-17-1.5 9.6422-4.8211c.1312-.0656.1968-.0984.2656-.1113a.4997.4997 0 0 1 .1844 0c.0688.0129.1344.0457.2656.1113L22 8.5l-9.6422 4.8212c-.1312.0656-.1968.0984-.2656.1113a.5014.5014 0 0 1-.1844 0c-.0688-.0129-.1344-.0457-.2656-.1113L2 8.5001Z"></path></svg>
-                    <p className='concepts__item-txt panel__item-txt'>Academy</p>
+                    <p className='panel__item-txt'>Academy</p>
                 </li>
 
-                <li className='concepts__item panel__item'>
+                <li className='panel__item'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" d="M18 3H6v18h12V3Z" opacity="0.12"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.5 7h5m-5 4h5m-5 4h5m3.5 6V6.2c0-1.1201 0-1.6802-.218-2.108a1.9997 1.9997 0 0 0-.874-.874C16.4802 3 15.9201 3 14.8 3H9.2c-1.1201 0-1.6802 0-2.108.218a1.9999 1.9999 0 0 0-.874.874C6 4.5198 6 5.08 6 6.2V21m14 0H4"></path></svg>
-                    <p className='concepts__item-txt panel__item-txt'>Job Listings</p>
+                    <p className='panel__item-txt'>Job Listings</p>
                 </li>
             </ul>
         </div>
