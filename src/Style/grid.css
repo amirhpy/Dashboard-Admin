@@ -306,7 +306,7 @@ body {
 /* Size xl */
 @media (min-width: 1200px) {
     .container {
-        width: 1140px;
+        width: 100%;
     }
 
     .col-xl-1 {

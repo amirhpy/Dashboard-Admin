@@ -4,6 +4,26 @@
 }
 
 @font-face {
+    font-family: 'inter-bold';
+    src: url('../Assets/Font/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url('../Assets/Font/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'inter-semibold';
+    src: url('../Assets/Font/Inter-SemiBold.ttf');
+}
+
+@font-face {
     font-family: 'jakart';
     src: url('../Assets/Font/PlusJakartaSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'jakart-bold';
+    src: url('../Assets/Font/PlusJakartaSans-Bold.ttf');
 }

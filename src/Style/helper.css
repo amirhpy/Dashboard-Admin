@@ -1,3 +1,10 @@
 .mt-0 {
     margin-top: 0 !important;
 }
+
+.shadow-c {
+    border-radius: 2rem;
+    box-shadow:
+        rgb(0 0 0 / 4%) 0px 5px 22px,
+        rgb(0 0 0 / 3%) 0px 0px 0px 0.5px;
+}

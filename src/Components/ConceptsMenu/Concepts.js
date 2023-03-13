@@ -3,9 +3,8 @@ import React from 'react';
 const Concepts = () => {
     return (
         <div className='concepts-container'>
-            {/* <h4 className='concepts__menu-name'>concepts</h4> */}
             <ul className='concepts-menu panel-menu'>
-                <li className='concepts__item mt-0 panel__item'>
+                <li className='concepts__item panel__item'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                         <path fill="currentColor" d="M12 22c5.5228 0 10-4.4772 10-10 0-5.5229-4.4772-10-10-10C6.4771 2 2 6.4771 2 12c0 5.5228 4.4771 10 10 10Z" opacity="0.12">
                         </path>
