@@ -3,21 +3,19 @@ import React from 'react';
 // MUI Icon
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
+import SearchIcon from '@mui/icons-material/Search';
 
 import Avatar from '@mui/material/Avatar';
 
 // Image
 import avatar from '../../Assets/Images/avatar/avatar-anika-visser.png'
 
-// Modal
-import Modal from '../Shared/Modal/Modal'
-
 const Header = () => {
     return (
         <header className='header'>
             <div className='header-content'>
                 <div className='header-search icon-parent'>
-                    <Modal />
+                    <SearchIcon className='header__search-icon' />
                 </div>
                 <div className='header-setting'>
                     <div className='icon-parent'>
