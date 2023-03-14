@@ -50,16 +50,21 @@ const ECommerce = () => {
                         </div>
                         <div className='col-4'>
                             <div className='shadow-c'>
-                                <div className='overview-inbox'>
+                                <div className='inbox'>
                                     <h3 className='components-title'>Top Selling Products</h3>
                                     {sellingProducts.map(product => (
-                                        <div className='overview-inbox-users' key={product.id}>
-                                            <div className='ecommerce-product-img'>
-                                                <img src={product.img} alt='product' />
+                                        <div className='inbox-users' key={product.id}>
+                                            <div className='align-center'>
+                                                <div className='inbox-product-img'>
+                                                    <img src={product.img} alt='product' />
+                                                </div>
+                                                <div className='inbox-userinfo'>
+                                                    <h4 className='inbox-name'>{product.name}</h4>
+                                                    <p className='inbox-desc'>{product.category}</p>
+                                                </div>
                                             </div>
-                                            <div className='overview-inbox-userinfo'>
-                                                <h4 className='overview__inbox-name'>{product.name}</h4>
-                                                <p className='overview__inbox-desc'>{product.category}</p>
+                                            <div className='inbox-rate'>
+                                                <h6>#{product.id}</h6>
                                             </div>
                                         </div>
                                     ))}

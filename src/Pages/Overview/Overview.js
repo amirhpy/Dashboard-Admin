@@ -40,14 +40,14 @@ const Overview = () => {
                         </div>
                         <div className='col-5'>
                             <div className='shadow-c'>
-                                <div className='overview-inbox'>
+                                <div className='inbox'>
                                     <h3 className='components-title'>Inbox</h3>
                                     {inboxData.map(user => (
-                                        <div className='overview-inbox-users' key={user.id}>
-                                            <Avatar src={user.profile} alt='profile' className='overview__inbox-img' />
-                                            <div className='overview-inbox-userinfo'>
-                                                <h4 className='overview__inbox-name'>{user.userName}</h4>
-                                                <p className='overview__inbox-desc'>{user.massege}</p>
+                                        <div className='inbox-users' key={user.id}>
+                                            <Avatar src={user.profile} alt='profile' className='inbox-img' />
+                                            <div className='inbox-userinfo'>
+                                                <h4 className='inbox-name'>{user.userName}</h4>
+                                                <p className='inbox-desc'>{user.massege}</p>
                                             </div>
                                         </div>
                                     ))}

@@ -28,3 +28,8 @@
 .font-23 {
     font-size: 2.3rem !important;
 }
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
