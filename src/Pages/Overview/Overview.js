@@ -28,8 +28,10 @@ const Overview = () => {
         <div className='overview'>
             <div className='container'>
                 <h3 className='components-name'>Overview</h3>
-                <div className='row'>
-                    {allTasks.map(item => <Tasks key={item.id} {...item} />)}
+                <div className='overview-tasks'>
+                    <div className='row'>
+                        {allTasks.map(item => <Tasks key={item.id} {...item} />)}
+                    </div>
                 </div>
                 <div className='overview-charts'>
                     <div className='row'>
@@ -39,7 +41,7 @@ const Overview = () => {
                         <div className='col-5'>
                             <div className='shadow-c'>
                                 <div className='overview-inbox'>
-                                    <h3 className='overview__inbox-title'>Inbox</h3>
+                                    <h3 className='components-title'>Inbox</h3>
                                     {inboxData.map(user => (
                                         <div className='overview-inbox-users' key={user.id}>
                                             <Avatar src={user.profile} alt='profile' className='overview__inbox-img' />

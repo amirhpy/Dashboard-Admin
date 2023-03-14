@@ -8,3 +8,23 @@
         rgb(0 0 0 / 4%) 0px 5px 22px,
         rgb(0 0 0 / 3%) 0px 0px 0px 0.5px;
 }
+
+.pink {
+    background-color: rgb(254, 243, 242);
+}
+
+.orange {
+    background-color: rgb(255, 250, 235);
+}
+
+.green {
+    background-color: rgb(240, 253, 249);
+}
+
+.b-radius {
+    border-radius: 2rem;
+}
+
+.font-23 {
+    font-size: 2.3rem !important;
+}
