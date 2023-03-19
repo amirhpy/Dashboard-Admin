@@ -9,6 +9,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 .app-container {
@@ -295,7 +296,7 @@ a {
     border-radius: 1rem;
 }
 
-.inbox-rate>h6{
+.inbox-rate>h6 {
     font-size: 1.4rem;
     font-family: 'inter-semibold';
 }
@@ -342,6 +343,64 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 1.6rem 3.5rem 3.5rem 3.5rem;
+}
+
+/* ===== customers ===== */
+
+.customers {}
+
+.customers-users {
+    display: flex;
+    align-items: center;
+}
+
+.customers-username-content {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-family: 'inter';
+}
+
+.customers__name {
+    font-family: 'inter-medium';
+    color: #111927;
+}
+
+.customers__email {
+    color: #6c737f;
+    margin-top: .2rem;
+}
+
+.customers__cell-style {
+    color: #111927;
+    font-size: 1.4rem;
+    font-family: 'inter';
+}
+
+.customers__actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customers__actions>a {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    transition: all 180ms ease-in;
+}
+
+.customers__actions>a:hover {
+    background-color: rgba(108, 115, 127, 0.04);
+    transition: all 180ms ease-in;
+}
+
+.customers__actions>a>svg {
+    color: #6c737f;
+    font-size: 2.4rem;
 }
 
 @media screen and (max-width: 1200px) {
