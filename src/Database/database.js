@@ -32,12 +32,12 @@ let sellingProducts = [
 ]
 
 let products = [
-    { id: 1, img: healthcare, name: 'Healthcare Erbology', category: 'healthcare', stock: '12', price: '$21,00', sku: '164_DKSEKD', status: 'PUBLISHED' },
-    { id: 2, img: makeup, name: 'Makeup Lancome Rouge', category: 'makeup', stock: '31', price: '$56,00', sku: '351_DKSEKD', status: 'DRAFT' },
-    { id: 3, img: Necessaire, name: 'Skincare Necessaire', category: 'skincare', stock: '43', price: '$32,00', sku: '874_DKSEKD', status: 'PUBLISHED' },
-    { id: 4, img: soja, name: 'Skincare Soja CO', category: 'skincare', stock: '5', price: '$98,00', sku: '291_DKSEKD', status: 'PUBLISHED' },
-    { id: 5, img: makeupLipstick, name: 'Makeup Lipstick', category: 'makeup', stock: '27', price: '$63,00', sku: '982_DKSEKD', status: 'PUBLISHED' },
-    { id: 6, img: healthcareRitual, name: 'Healthcare Ritual', category: 'healthcare', stock: '3', price: '$44,00', sku: '126_DKSEKD', status: 'DRAFT' }
+    { id: 1, img: healthcare, name: 'Healthcare Erbology', category: 'healthcare', stock: '12', price: '$21,00', sku: '164_DKSEKD', status: 'published' },
+    { id: 2, img: makeup, name: 'Makeup Lancome Rouge', category: 'makeup', stock: '31', price: '$56,00', sku: '351_DKSEKD', status: 'draft' },
+    { id: 3, img: Necessaire, name: 'Skincare Necessaire', category: 'skincare', stock: '43', price: '$32,00', sku: '874_DKSEKD', status: 'published' },
+    { id: 4, img: soja, name: 'Skincare Soja CO', category: 'skincare', stock: '5', price: '$98,00', sku: '291_DKSEKD', status: 'published' },
+    { id: 5, img: makeupLipstick, name: 'Makeup Lipstick', category: 'makeup', stock: '27', price: '$63,00', sku: '982_DKSEKD', status: 'published' },
+    { id: 6, img: healthcareRitual, name: 'Healthcare Ritual', category: 'healthcare', stock: '3', price: '$44,00', sku: '126_DKSEKD', status: 'draft' }
 ]
 
 let users = [

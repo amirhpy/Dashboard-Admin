@@ -21,6 +21,16 @@
     background-color: rgb(240, 253, 249);
 }
 
+.published {
+    background-color: rgba(16, 185, 129, 0.12);
+    color: rgb(11, 129, 90);
+}
+
+.draft {
+    background-color: rgba(6, 174, 212, 0.12);
+    color: rgb(14, 112, 144);
+}
+
 .b-radius {
     border-radius: 2rem;
 }

@@ -8,11 +8,11 @@ import { products } from '../../Database/database';
 import { DataGrid } from '@mui/x-data-grid'
 import Box from '@mui/material/Box'
 
-// MUI Icon
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined';
-
 const Products = () => {
+    const Button = ({ type }) => {
+        return <button className={'datagrid__btn ' + type}>{type}</button>
+    }
+
     const [productsData] = useState(products)
 
     const columns = [
@@ -58,7 +58,12 @@ const Products = () => {
             field: 'status',
             headerName: 'Status',
             cellClassName: 'datagrid__cell-status',
-            width: 150
+            width: 150,
+            renderCell: (params) => {
+                return (
+                    <Button type={params.row.status} />
+                )
+            }
         }
     ]
 
