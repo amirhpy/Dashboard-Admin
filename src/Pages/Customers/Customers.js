@@ -24,11 +24,11 @@ const Customers = () => {
             renderCell: (params) => {
                 return (
                     <Link to='/'>
-                        <div className='customers-users'>
+                        <div className='datagrid-users'>
                             <Avatar src={params.row.profile} alt='profile' />
-                            <div className='customers-username-content'>
-                                <p className='customers__name'>{params.row.name}</p>
-                                <p className='customers__email'>{params.row.email}</p>
+                            <div className='datagrid-username-content'>
+                                <p className='datagrid__name'>{params.row.name}</p>
+                                <p className='datagrid__email'>{params.row.email}</p>
                             </div>
                         </div>
                     </Link>
@@ -38,29 +38,29 @@ const Customers = () => {
         {
             field: 'location',
             headerName: 'Location',
-            cellClassName: 'customers__cell-style',
+            cellClassName: 'datagrid__cell-style',
             width: 250
         },
         {
             field: 'orders',
             headerName: 'Orders',
-            cellClassName: 'customers__cell-style',
+            cellClassName: 'datagrid__cell-style',
             width: 150
         },
         {
             field: 'spent',
             headerName: 'Spent',
-            cellClassName: 'customers__cell-style',
+            cellClassName: 'datagrid__cell-style',
             width: 150
         },
         {
             field: 'action',
             headerName: 'Actions',
-            cellClassName: 'customers__cell-style',
+            cellClassName: 'datagrid__cell-style',
             width: 80,
             renderCell: (params) => {
                 return (
-                    <div className='customers__actions'>
+                    <div className='datagrid__actions'>
                         <Link to='/'>
                             <ModeEditOutlineOutlinedIcon />
                         </Link>
@@ -88,6 +88,7 @@ const Customers = () => {
                         autoHeight
                         rows={usersData}
                         columns={columns}
+                        rowHeight={70}
                         initialState={{
                             pagination: {
                                 paginationModel: {

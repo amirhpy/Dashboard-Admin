@@ -13,6 +13,8 @@ import healthcare from '../Assets/Images/products/product-1.png'
 import makeup from '../Assets/Images/products/product-2.png'
 import Necessaire from '../Assets/Images/products/product-4.png'
 import soja from '../Assets/Images/products/product-5.png'
+import makeupLipstick from '../Assets/Images/products/product-6.png'
+import healthcareRitual from '../Assets/Images/products/product-7.png'
 
 let inboxData = [
     { id: 1, profile: alcides, userName: 'Alcides Antonio', massege: 'Hello, we spoke earlier on the phone' },
@@ -29,6 +31,15 @@ let sellingProducts = [
     { id: 4, img: soja, name: 'Skincare Soja CO', category: 'skincare' }
 ]
 
+let products = [
+    { id: 1, img: healthcare, name: 'Healthcare Erbology', category: 'healthcare', stock: '12', price: '$21,00', sku: '164_DKSEKD', status: 'PUBLISHED' },
+    { id: 2, img: makeup, name: 'Makeup Lancome Rouge', category: 'makeup', stock: '31', price: '$56,00', sku: '351_DKSEKD', status: 'DRAFT' },
+    { id: 3, img: Necessaire, name: 'Skincare Necessaire', category: 'skincare', stock: '43', price: '$32,00', sku: '874_DKSEKD', status: 'PUBLISHED' },
+    { id: 4, img: soja, name: 'Skincare Soja CO', category: 'skincare', stock: '5', price: '$98,00', sku: '291_DKSEKD', status: 'PUBLISHED' },
+    { id: 5, img: makeupLipstick, name: 'Makeup Lipstick', category: 'makeup', stock: '27', price: '$63,00', sku: '982_DKSEKD', status: 'PUBLISHED' },
+    { id: 6, img: healthcareRitual, name: 'Healthcare Ritual', category: 'healthcare', stock: '3', price: '$44,00', sku: '126_DKSEKD', status: 'DRAFT' }
+]
+
 let users = [
     { id: 1, profile: carson, name: 'Carson Darrin', email: 'Carson@gmail.com', location: 'Cleveland, Ohio, USA', orders: '3', spent: '$300,00' },
     { id: 2, profile: fran, name: 'Fran Perez', email: 'Fran@gmail.com', location: 'Atlanta, Georgia, USA', orders: '4', spent: '$420,00' },
@@ -41,4 +52,4 @@ let users = [
     { id: 9, profile: nasimiyu, name: 'Nasimiyu Danai', email: 'Nasimiyu@gmail.com', location: 'Salt Lake City, Utah, USA', orders: '7', spent: '$200,00' },
 ]
 
-export { inboxData, sellingProducts, users }
+export { inboxData, sellingProducts, users, products }

@@ -345,45 +345,59 @@ a {
     padding: 1.6rem 3.5rem 3.5rem 3.5rem;
 }
 
-/* ===== customers ===== */
+/* customers */
 
 .customers {}
 
-.customers-users {
+/* ===== data grid ===== */
+
+.datagrid-users {
     display: flex;
     align-items: center;
 }
 
-.customers-username-content {
+.datagrid-img-container {
+    width: 8rem;
+    height: 8rem;
+}
+
+.datagrid-img-container>img {
+    width: 100%;
+    border-radius: .8rem;
+}
+
+.datagrid-username-content {
     margin-left: 1rem;
     font-size: 1.4rem;
     font-family: 'inter';
 }
 
-.customers__name {
+.datagrid__name {
     font-family: 'inter-medium';
     color: #111927;
 }
 
-.customers__email {
+.datagrid__email {
     color: #6c737f;
     margin-top: .2rem;
 }
 
-.customers__cell-style {
+.datagrid__cell-style {
     color: #111927;
     font-size: 1.4rem;
     font-family: 'inter';
 }
 
-.customers__actions {
+.datagrid__cell-status {}
+
+.datagrid__actions {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.customers__actions>a {
+.datagrid__actions>a {
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -393,12 +407,12 @@ a {
     transition: all 180ms ease-in;
 }
 
-.customers__actions>a:hover {
+.datagrid__actions>a:hover {
     background-color: rgba(108, 115, 127, 0.04);
     transition: all 180ms ease-in;
 }
 
-.customers__actions>a>svg {
+.datagrid__actions>a>svg {
     color: #6c737f;
     font-size: 2.4rem;
 }
