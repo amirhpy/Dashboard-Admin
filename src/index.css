@@ -388,8 +388,6 @@ a {
     font-family: 'inter';
 }
 
-.datagrid__cell-status {}
-
 .datagrid__actions {
     width: 100%;
     display: flex;
@@ -432,7 +430,7 @@ a {
     }
 
     .panel-admin {
-        position: absolute;
+        position: fixed;
         z-index: 9;
         top: 0;
         left: 0;

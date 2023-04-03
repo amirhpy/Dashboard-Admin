@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// Data
+import { data } from '../../Database/database';
+
 // Components
 import Tasks from '../../Components/Shared/Tasks/Tasks';
 
@@ -36,7 +39,8 @@ const Overview = () => {
                 <div className='overview-charts'>
                     <div className='row'>
                         <div className='col-7'>
-                            <div className='overview-recharts'></div>
+                            <div className='overview-recharts'>
+                            </div>
                         </div>
                         <div className='col-5'>
                             <div className='shadow-c'>
