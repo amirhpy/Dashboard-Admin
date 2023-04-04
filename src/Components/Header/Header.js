@@ -10,11 +10,14 @@ import Avatar from '@mui/material/Avatar';
 // Image
 import avatar from '../../Assets/Images/avatar/avatar-anika-visser.png'
 
-const Header = () => {
+const Header = ({ hamburgerMenu, openMenuHandler }) => {
     return (
         <header className='header'>
             <div className='header-content'>
                 <div className='header-search icon-parent'>
+                    <div className={hamburgerMenu} onClick={openMenuHandler}>
+                        <div className='nav_toggle-line'></div>
+                    </div>
                     <SearchIcon className='header__search-icon' />
                 </div>
                 <div className='header-setting'>

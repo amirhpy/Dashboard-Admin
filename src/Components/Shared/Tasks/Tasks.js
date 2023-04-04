@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 const Tasks = (props) => {
     return (
-        <div className='col-4'>
+        <div className='col-12 col-md-4'>
             <div className='tasks shadow-c'>
                 <div className='tasks-head'>
                     <img src={props.img} alt='done' className='tasks__icon' />

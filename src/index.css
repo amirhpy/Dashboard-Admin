@@ -14,11 +14,10 @@ a {
 
 .app-container {
     display: flex;
-    justify-content: space-between;
 }
 
 .app-right {
-    width: 82%;
+    width: 100%;
 }
 
 /* ===== header ===== */
@@ -219,6 +218,10 @@ a {
 
 /* ===== tasks ===== */
 
+.tasks {
+    height: 100%;
+}
+
 .tasks-head {
     display: flex;
     align-items: center;
@@ -247,6 +250,14 @@ a {
 }
 
 /* ===== overview ===== */
+
+.overview-recharts {}
+
+/* ===== recharts ===== */
+
+.recharts {
+    padding: 2rem;
+}
 
 /* ===== inbox ===== */
 
@@ -425,16 +436,12 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-    .app-right {
-        width: 93%;
-    }
-
     .panel-admin {
         position: fixed;
         z-index: 9;
         top: 0;
         left: 0;
-        width: 7%;
+        width: 0;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -480,52 +487,27 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-    .app-right {
-        width: 91%;
-    }
-
-    .panel-admin {
-        width: 9%;
+    .components-name,
+    .tasks__score {
+        font-size: 3rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .app-right {
-        width: 88%;
-    }
-
-    .panel-admin {
-        width: 12%;
-    }
-
-    .menu--open {
-        width: 40% !important;
+    .components-name,
+    .tasks__score {
+        font-size: 2.7rem;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .app-right {
-        width: 83%;
-    }
-
-    .panel-admin {
-        width: 17%;
-    }
-
-    .menu--open {
-        width: 70% !important;
+    .components-name,
+    .tasks__score {
+        font-size: 2.4rem;
     }
 }
 
 @media screen and (max-width: 380px) {
-    .app-right {
-        width: 80%;
-    }
-
-    .panel-admin {
-        width: 20%;
-    }
-
     .panel__item {
         padding: .5rem 0;
     }

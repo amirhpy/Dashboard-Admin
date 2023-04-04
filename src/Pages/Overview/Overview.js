@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 
-// Data
-import { data } from '../../Database/database';
-
 // Components
 import Tasks from '../../Components/Shared/Tasks/Tasks';
+import Chart from '../../Components/Shared/Chart/Chart';
 
 // Shared
 import Button from '../../Components/Shared/Button/Button';
@@ -38,11 +36,13 @@ const Overview = () => {
                 </div>
                 <div className='overview-charts'>
                     <div className='row'>
-                        <div className='col-7'>
-                            <div className='overview-recharts'>
+                        <div className='col-12 col-lg-7'>
+                            <div className='overview-recharts shadow-c'>
+                                <h3 className='components-title'>Subscription Usage</h3>
+                                <Chart />
                             </div>
                         </div>
-                        <div className='col-5'>
+                        <div className='col-12 col-lg-5'>
                             <div className='shadow-c'>
                                 <div className='inbox'>
                                     <h3 className='components-title'>Inbox</h3>
