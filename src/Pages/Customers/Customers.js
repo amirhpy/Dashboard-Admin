@@ -23,7 +23,7 @@ const Customers = () => {
             width: 300,
             renderCell: (params) => {
                 return (
-                    <Link to='/'>
+                    <Link to={`/customers/customersdetails/${params.row.id}`}>
                         <div className='datagrid-users'>
                             <Avatar src={params.row.profile} alt='profile' />
                             <div className='datagrid-username-content'>
@@ -61,10 +61,10 @@ const Customers = () => {
             renderCell: (params) => {
                 return (
                     <div className='datagrid__actions'>
-                        <Link to='/'>
+                        <Link to={`/customers/${params.row.id}`}>
                             <ModeEditOutlineOutlinedIcon />
                         </Link>
-                        <Link to='/'>
+                        <Link to={`/customers/customersdetails/${params.row.id}`}>
                             <ArrowForwardIcon />
                         </Link>
                     </div>

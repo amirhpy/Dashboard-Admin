@@ -79,7 +79,7 @@ a {
 /* ===== panel admin ===== */
 
 .panel-admin {
-    width: 18%;
+    width: 22%;
     height: 100vh;
     top: 0;
     position: sticky;
@@ -435,6 +435,183 @@ a {
     border-radius: .8rem;
 }
 
+/* ===== customers edit ===== */
+
+.customers-edit-main {
+    margin: 7rem 0 3rem 0;
+}
+
+.customers-edit-link {
+    display: flex;
+    align-items: center;
+    font-family: 'inter-medium';
+    font-size: 1.4rem;
+    color: #111927;
+}
+
+.customers-edit-back {
+    font-size: 2.4rem !important;
+    margin-right: .6rem;
+}
+
+.customers-edit-profile {
+    display: flex;
+    align-items: center;
+    margin: 4rem 0 3rem 0;
+}
+
+.customers-edit-data {
+    margin-left: 1.2rem;
+}
+
+.customers-edit-user {
+    margin-top: .5rem;
+}
+
+.customers-edit-id {
+    margin-left: .8rem;
+    border-radius: .8rem;
+    padding: .5rem;
+    background-color: rgba(17, 25, 39, 0.12);
+}
+
+.customers-edit-inputs {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.customers-edit-btn {
+    padding: 2rem;
+}
+
+.customers-edit-btn>button {
+    border: none;
+    outline: none;
+    padding: 1.2rem 2rem;
+    font-size: 1.4rem;
+    font-family: 'inter-medium';
+    color: rgb(255, 255, 255);
+    background-color: rgb(99, 102, 241);
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.customers-edit-btn>button:hover {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 10px;
+    background-color: rgb(67, 56, 202);
+}
+
+/* ===== customers details ===== */
+
+.customers-details-info {
+    padding: 2rem;
+}
+
+.customers-details-account {
+    font-size: 1.4rem;
+    border-bottom: .1rem solid rgb(242, 244, 247);
+    padding: 2rem 0;
+}
+
+.customers-details__label {
+    font-family: 'inter-medium';
+    color: #111927;
+}
+
+.customers-details__desc {
+    margin-top: 1rem;
+    color: #6c737f;
+}
+
+/* ===== input style ===== */
+
+.input-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 48%;
+}
+
+.input-container:nth-child(3),
+.input-container:nth-child(4) {
+    margin-top: 2rem;
+}
+
+.input-container>span,
+.input-container .input {
+    white-space: nowrap;
+    display: block;
+}
+
+.input-container>span,
+.input-container .input:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.input-container>span,
+.input-container .input {
+    border-radius: 0 6px 6px 0;
+}
+
+.input-container>span,
+.input-container .input {
+    margin-left: -1px;
+}
+
+.input-container .input {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.input-container span {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6b7385;
+    background: #d4def5;
+    border: 1px solid #CDD9ED;
+    font-weight: bold;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.input-container:focus-within>span {
+    color: #fff;
+    background-color: #148cd1;
+    border-color: #148cd1;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    color: #99A3BA;
+    border: 1px solid #CDD9ED;
+    background: #fff;
+    transition: border 0.3s ease;
+}
+
+.input::placeholder {
+    color: #CBD1DC;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #148cd1;
+}
+
 @media screen and (max-width: 1200px) {
     .panel-admin {
         position: fixed;
@@ -487,23 +664,46 @@ a {
 }
 
 @media screen and (max-width: 992px) {
+
     .components-name,
     .tasks__score {
         font-size: 3rem;
     }
+
+    .menu--open {
+        width: 27% !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
+
     .components-name,
     .tasks__score {
         font-size: 2.7rem;
     }
+
+    .menu--open {
+        width: 35% !important;
+    }
+
+    .input-container {
+        max-width: 100%;
+    }
+
+    .input-container:nth-child(2) {
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
+
     .components-name,
     .tasks__score {
         font-size: 2.4rem;
+    }
+
+    .menu--open {
+        width: 90% !important;
     }
 }
 

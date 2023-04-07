@@ -41,15 +41,15 @@ let products = [
 ]
 
 let users = [
-    { id: 1, profile: carson, name: 'Carson Darrin', email: 'Carson@gmail.com', location: 'Cleveland, Ohio, USA', orders: '3', spent: '$300,00' },
-    { id: 2, profile: fran, name: 'Fran Perez', email: 'Fran@gmail.com', location: 'Atlanta, Georgia, USA', orders: '4', spent: '$420,00' },
-    { id: 3, profile: jie, name: 'Jie Yan Song', email: 'Jie@gmail.com', location: 'North Canton, Ohio, USA', orders: '1', spent: '$110,00' },
-    { id: 4, profile: marcus, name: 'Marcus Finn', email: 'Marcus@gmail.com', location: 'Madrid, Madrid, Spain', orders: '2', spent: '$287,00' },
-    { id: 5, profile: penjani, name: 'Penjani Inyene', email: 'Penjani@gmail.com', location: 'Berkeley, California, USA', orders: '0', spent: '$0,00' },
-    { id: 6, profile: omar, name: 'Omar Darobe', email: 'Omar@gmail.com', location: 'Carson City, Nevada, USA', orders: '10', spent: '$110,00' },
-    { id: 7, profile: siegbert, name: 'Siegbert Gottfried', email: 'Siegbert@gmail.com', location: 'Los Angeles, California, USA', orders: '2', spent: '$1,000,000' },
-    { id: 8, profile: iulia, name: 'Iulia Albu', email: 'Iulia@gmail.com', location: 'Murray, Utah, USA', orders: '0', spent: '$0,00' },
-    { id: 9, profile: nasimiyu, name: 'Nasimiyu Danai', email: 'Nasimiyu@gmail.com', location: 'Salt Lake City, Utah, USA', orders: '7', spent: '$200,00' },
+    { id: 1, profile: carson, name: 'Carson Darrin', email: 'Carson@gmail.com', location: 'Cleveland, Ohio, USA', orders: '3', spent: '$300,00', uuid: '74nrfn57312n37', phone: '0936-293-1516', cart: '**** **** **** 4164' },
+    { id: 2, profile: fran, name: 'Fran Perez', email: 'Fran@gmail.com', location: 'Atlanta, Georgia, USA', orders: '4', spent: '$420,00', uuid: 'cmfjrg948gjfns', phone: '0936-293-1516', cart: '**** **** **** 3320' },
+    { id: 3, profile: jie, name: 'Jie Yan Song', email: 'Jie@gmail.com', location: 'North Canton, Ohio, USA', orders: '1', spent: '$110,00', uuid: 'mv12mf34042cv6', phone: '0936-293-1516', cart: '**** **** **** 0167' },
+    { id: 4, profile: marcus, name: 'Marcus Finn', email: 'Marcus@gmail.com', location: 'Madrid, Madrid, Spain', orders: '2', spent: '$287,00', uuid: 'nvm34f8245nv4', phone: '0936-293-1516', cart: '**** **** **** 3092' },
+    { id: 5, profile: penjani, name: 'Penjani Inyene', email: 'Penjani@gmail.com', location: 'Berkeley, California, USA', orders: '0', spent: '$0,00', uuid: 'f4fm3438dn12', phone: '0936-293-1516', cart: '**** **** **** 1629' },
+    { id: 6, profile: omar, name: 'Omar Darobe', email: 'Omar@gmail.com', location: 'Carson City, Nevada, USA', orders: '10', spent: '$110,00', uuid: '12mf8f34f4ng', phone: '0936-293-1516', cart: '**** **** **** 8264' },
+    { id: 7, profile: siegbert, name: 'Siegbert Gottfried', email: 'Siegbert@gmail.com', location: 'Los Angeles, California, USA', orders: '2', spent: '$1,000,000', uuid: 'emf4384nc123', phone: '0936-293-1516', cart: '**** **** **** 1625' },
+    { id: 8, profile: iulia, name: 'Iulia Albu', email: 'Iulia@gmail.com', location: 'Murray, Utah, USA', orders: '0', spent: '$0,00', uuid: '12fgky59y4mv0', phone: '0936-293-1516', cart: '**** **** **** 9047' },
+    { id: 9, profile: nasimiyu, name: 'Nasimiyu Danai', email: 'Nasimiyu@gmail.com', location: 'Salt Lake City, Utah, USA', orders: '7', spent: '$200,00', uuid: '22enf83ng5jl9', phone: '0936-293-1516', cart: '**** **** **** 2760' },
 ]
 
 const xAxisData = [
