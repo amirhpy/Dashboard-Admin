@@ -4,23 +4,29 @@ import { NavLink } from 'react-router-dom'
 // Components
 import Concepts from '../ConceptsMenu/Concepts';
 
+// Mui Icon
+import CloseIcon from '@mui/icons-material/Close'
+
 const PanelAdmin = ({ menuOpen, openMenuHandler }) => {
     return (
         <section className={menuOpen}>
             <div className='dashboard-admin'>
-                <div className='panel-devias'>
-                    <div className='panel-logo-parent'>
-                        <svg onClick={openMenuHandler} fill="none" height="100%" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.16" d="M7.242 11.083c.449-1.674 2.17-3.394 3.843-3.843l10.434-2.796c1.673-.448 2.666.545 2.218 2.218L20.94 17.096c-.449 1.674-2.17 3.394-3.843 3.843L6.664 23.735c-1.673.448-2.666-.545-2.218-2.218l2.796-10.434Z" fill="#6366F1">
-                            </path>
-                            <path d="M3.06 6.9c.448-1.674 2.168-3.394 3.842-3.843L17.336.261c1.673-.448 2.667.545 2.218 2.218l-2.796 10.434c-.449 1.674-2.169 3.394-3.843 3.843L2.481 19.552C.808 20-.185 19.007.263 17.334L3.06 6.9Z" fill="#6366F1">
-                            </path>
-                        </svg>
+                <div className='panel-devias-container'>
+                    <div className='panel-devias'>
+                        <div className='panel-logo-parent'>
+                            <svg fill="none" height="100%" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.16" d="M7.242 11.083c.449-1.674 2.17-3.394 3.843-3.843l10.434-2.796c1.673-.448 2.666.545 2.218 2.218L20.94 17.096c-.449 1.674-2.17 3.394-3.843 3.843L6.664 23.735c-1.673.448-2.666-.545-2.218-2.218l2.796-10.434Z" fill="#6366F1">
+                                </path>
+                                <path d="M3.06 6.9c.448-1.674 2.168-3.394 3.842-3.843L17.336.261c1.673-.448 2.667.545 2.218 2.218l-2.796 10.434c-.449 1.674-2.169 3.394-3.843 3.843L2.481 19.552C.808 20-.185 19.007.263 17.334L3.06 6.9Z" fill="#6366F1">
+                                </path>
+                            </svg>
+                        </div>
+                        <div className='panel-devias-info'>
+                            <h3 className='panel__devias-name'>Devias</h3>
+                            <p className='panel__devias-desc'>Production</p>
+                        </div>
                     </div>
-                    <div className='panel-devias-info'>
-                        <h3 className='panel__devias-name'>Devias</h3>
-                        <p className='panel__devias-desc'>Production</p>
-                    </div>
+                    <CloseIcon className='menu-close' onClick={openMenuHandler} fontSize='large' sx={{ color: '#fff', cursor: 'pointer' }} />
                 </div>
                 <ul className='panel-menu'>
                     <NavLink to='/' className={(link) => link.isActive ? 'panel__item--active' : ''}>
@@ -32,17 +38,6 @@ const PanelAdmin = ({ menuOpen, openMenuHandler }) => {
                                 </path>
                             </svg>
                             <p className='panel__item-txt'>Overview</p>
-                        </li>
-                    </NavLink>
-                    <NavLink to='/analytics' className={(link) => link.isActive ? 'panel__item--active' : ''}>
-                        <li className='panel__item'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                                <path fill="currentColor" d="M3 7.8c0-1.6802 0-2.5202.327-3.162a3 3 0 0 1 1.311-1.311C5.2798 3 6.1198 3 7.8 3h8.4c1.6802 0 2.5202 0 3.162.327a2.9997 2.9997 0 0 1 1.311 1.311C21 5.2798 21 6.1198 21 7.8v8.4c0 1.6802 0 2.5202-.327 3.162a2.9994 2.9994 0 0 1-1.311 1.311C18.7202 21 17.8802 21 16.2 21H7.8c-1.6802 0-2.5202 0-3.162-.327a2.9997 2.9997 0 0 1-1.311-1.311C3 18.7202 3 17.8802 3 16.2V7.8Z" opacity="0.12">
-                                </path>
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 15v2m4-6v6m4-10v10m-8.2 4h8.4c1.6802 0 2.5202 0 3.162-.327a2.9994 2.9994 0 0 0 1.311-1.311C21 18.7202 21 17.8802 21 16.2V7.8c0-1.6802 0-2.5202-.327-3.162a2.9997 2.9997 0 0 0-1.311-1.311C18.7202 3 17.8802 3 16.2 3H7.8c-1.6802 0-2.5202 0-3.162.327a3 3 0 0 0-1.311 1.311C3 5.2798 3 6.1198 3 7.8v8.4c0 1.6802 0 2.5202.327 3.162a2.9997 2.9997 0 0 0 1.311 1.311C5.2798 21 6.1198 21 7.8 21Z">
-                                </path>
-                            </svg>
-                            <p className='panel__item-txt'>Analytics</p>
                         </li>
                     </NavLink>
                     <NavLink to='/ecommerce' className={(link) => link.isActive ? 'panel__item--active' : ''}>
@@ -68,6 +63,15 @@ const PanelAdmin = ({ menuOpen, openMenuHandler }) => {
                             <p className='panel__item-txt'>Products</p>
                         </li>
                     </NavLink>
+                    <li className='panel__item'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                            <path fill="currentColor" d="M3 7.8c0-1.6802 0-2.5202.327-3.162a3 3 0 0 1 1.311-1.311C5.2798 3 6.1198 3 7.8 3h8.4c1.6802 0 2.5202 0 3.162.327a2.9997 2.9997 0 0 1 1.311 1.311C21 5.2798 21 6.1198 21 7.8v8.4c0 1.6802 0 2.5202-.327 3.162a2.9994 2.9994 0 0 1-1.311 1.311C18.7202 21 17.8802 21 16.2 21H7.8c-1.6802 0-2.5202 0-3.162-.327a2.9997 2.9997 0 0 1-1.311-1.311C3 18.7202 3 17.8802 3 16.2V7.8Z" opacity="0.12">
+                            </path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 15v2m4-6v6m4-10v10m-8.2 4h8.4c1.6802 0 2.5202 0 3.162-.327a2.9994 2.9994 0 0 0 1.311-1.311C21 18.7202 21 17.8802 21 16.2V7.8c0-1.6802 0-2.5202-.327-3.162a2.9997 2.9997 0 0 0-1.311-1.311C18.7202 3 17.8802 3 16.2 3H7.8c-1.6802 0-2.5202 0-3.162.327a3 3 0 0 0-1.311 1.311C3 5.2798 3 6.1198 3 7.8v8.4c0 1.6802 0 2.5202.327 3.162a2.9997 2.9997 0 0 0 1.311 1.311C5.2798 21 6.1198 21 7.8 21Z">
+                            </path>
+                        </svg>
+                        <p className='panel__item-txt'>Analytics</p>
+                    </li>
                 </ul>
                 <Concepts />
             </div>

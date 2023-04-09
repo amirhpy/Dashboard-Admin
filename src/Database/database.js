@@ -101,6 +101,75 @@ const xAxisData = [
         name: 'Dec',
         thisYear: 4100
     }
-];
+]
 
-export { inboxData, sellingProducts, users, products, xAxisData }
+const eChartData = [
+    {
+        name: '27 Mar',
+        newCustomers: 4000,
+        crossSeling: 2400,
+        amt: 2400,
+    },
+    {
+        name: '28 Mar',
+        newCustomers: 3000,
+        crossSeling: 1398,
+        amt: 2210,
+    },
+    {
+        name: '29 Mar',
+        newCustomers: 2000,
+        crossSeling: 9800,
+        amt: 2290,
+    },
+    {
+        name: '30 Mar',
+        newCustomers: 2780,
+        crossSeling: 3908,
+        amt: 2000,
+    },
+    {
+        name: '31 Mar',
+        newCustomers: 1890,
+        crossSeling: 4800,
+        amt: 2181,
+    },
+    {
+        name: '01 Apr',
+        newCustomers: 2390,
+        crossSeling: 3800,
+        amt: 2500,
+    },
+    {
+        name: '02 Apr',
+        newCustomers: 4490,
+        crossSeling: 2300,
+        amt: 2100,
+    },
+    {
+        name: '03 Apr',
+        newCustomers: 4250,
+        crossSeling: 7800,
+        amt: 2100,
+    },
+    {
+        name: '04 Apr',
+        newCustomers: 3849,
+        crossSeling: 5172,
+        amt: 2100,
+    },
+    {
+        name: '05 Apr',
+        newCustomers: 6481,
+        crossSeling: 1720,
+        amt: 2100,
+    },
+    {
+        name: '06 Apr',
+        newCustomers: 3590,
+        crossSeling: 8420,
+        amt: 2100,
+    }
+]
+
+export { inboxData, sellingProducts, users, products, xAxisData, eChartData }

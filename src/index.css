@@ -90,10 +90,16 @@ a {
     padding: 2rem;
 }
 
+.panel-devias-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
 .panel-devias {
     display: flex;
     align-items: center;
-    margin-bottom: 3rem;
 }
 
 .panel-logo-parent {
@@ -188,6 +194,10 @@ a {
     bottom: 1rem;
 }
 
+.menu-close {
+    display: none !important;
+}
+
 .clicked .nav_toggle-line {
     background-color: transparent;
 }
@@ -233,7 +243,7 @@ a {
 }
 
 .tasks-content {
-    margin-left: 2.4rem;
+    margin-left: 2rem;
 }
 
 .tasks__name {
@@ -250,8 +260,6 @@ a {
 }
 
 /* ===== overview ===== */
-
-.overview-recharts {}
 
 /* ===== recharts ===== */
 
@@ -343,11 +351,13 @@ a {
 
 /* ===== e-commerce ===== */
 
-.ecommerce {}
+.ecommerce-chart {
+    padding: 2rem 3rem 3rem 3rem;
+}
 
-.ecommerce-main {}
-
-.ecommerce-status {}
+.recharts-cartesian-axis-ticks {
+    font-size: 1.3rem !important;
+}
 
 .ecommerce-today-status {
     display: flex;
@@ -356,9 +366,7 @@ a {
     padding: 1.6rem 3.5rem 3.5rem 3.5rem;
 }
 
-/* customers */
-
-.customers {}
+/* ===== customers ===== */
 
 /* ===== data grid ===== */
 
@@ -596,7 +604,6 @@ a {
     font-weight: 500;
     font-family: inherit;
     border-radius: 6px;
-    -webkit-appearance: none;
     color: #99A3BA;
     border: 1px solid #CDD9ED;
     background: #fff;
@@ -661,6 +668,18 @@ a {
     .nav__toggle-icon {
         display: flex;
     }
+
+    .menu-close {
+        display: flex !important;
+    }
+
+    .tasks__icon {
+        width: 4rem;
+    }
+
+    .tasks-content {
+        margin-left: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -693,6 +712,20 @@ a {
     .input-container:nth-child(2) {
         margin-top: 2rem;
     }
+
+    .ecommerce-today-status {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tasks-head {
+        width: 100%;
+    }
+
+    .tasks-head:nth-child(2),
+    .tasks-head:nth-child(3) {
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -704,6 +737,10 @@ a {
 
     .menu--open {
         width: 90% !important;
+    }
+
+    .font-23 {
+        font-size: 2rem !important;
     }
 }
 
