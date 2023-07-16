@@ -88,6 +88,15 @@ a {
 
 .dashboard-admin {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.name-programmer {
+    color: #fff;
+    text-align: center;
 }
 
 .panel-devias-container {
